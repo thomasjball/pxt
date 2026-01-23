@@ -86,7 +86,7 @@ export const buildEngines: Map<BuildEngine> = {
     codal: {
         id: "codal",
         updateEngineAsync: updateCodalBuildAsync,
-        buildAsync: () => runBuildCmdAsync("python", "build.py"),
+        buildAsync: () => runBuildCmdAsync("python3", "build.py"),
         setPlatformAsync: noopAsync,
         patchHexInfo: patchCodalHexInfo,
         prepBuildDirAsync: prepCodalBuildDirAsync,
